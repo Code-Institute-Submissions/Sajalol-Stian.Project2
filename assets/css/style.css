@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&family=Source+Sans+Pro:wght@300&family=Ubuntu:wght@300&display=swap');
+
+/* Main view */ 
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    height: 50px;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    min-height: 40px;
+    padding-top: 5px;
+    text-align: center;
+    color:white;
+    background-color: rgb(34, 34, 46);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* gamer area */
+
+.Gamer1-area {
+    margin-left: 15%;
+    float: left;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 8%;
+
+}
+
+.control {
+    font-size: 40px;
+}
+
+.Gamer2-area {
+    margin-right: 15%;
+    float: right;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 8%;
+
+}
+
+.result-gamer2 {
+    padding-top: 30%;
+}
+
+.results-total {
+    text-align: center;
+    padding-top: 20%;
+    font-size: 30px;
+}

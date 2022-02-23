@@ -16,19 +16,67 @@
     <header class="heading">
         <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
         <h2>A new varient of rock, paper and scissors</h2>
+        <img class="logo" src="assets/images/rock-paper-etc.ico.ico" alt="logo">
     </header>
 
     <section class="Gamer1-area">
         <div>
             <h3>Gamer 1</h3>
-            <p>Make a choise</p>
-
+            <h3>Make a choise:</h3>
+            <div class="gamer-buttons">
+                <button aria-label="Rock" class="control" data-choice="0">
+                    <i class="fa-solid fa-hand-back-fist"></i>
+                </button>
+                <button aria-label="Paper" class="control" data-choice="1">
+                    <i class="fa-solid fa-hand"></i>
+                </button>
+                <button aria-label="Scissors" class="control" data-choice="2">
+                    <i class="fa-solid fa-hand-scissors"></i>
+                </button>
+                <button aria-label="Lizard" class="control" data-choice="3">
+                    <i class="fa-solid fa-hand-lizard"></i>
+                </button>
+                <button aria-label="Spock" class="control" data-choice="4">
+                    <i class="fa-solid fa-hand-spock"></i>
+                </button>
+            </div>
         </div>
-        <div class="score-area">
+        <div id="messages"></div>
+        <div class="score-area1">
             <p class="result-gamer1">Results: <span id="results-1">0</span></p>
+        </div>
+    </section>
+<section>
+        <div class="Gamer2-area">
+            <h3>Computer</h3>
+        <div class="computer-gamer">
+            <i class="fa-solid fa-hand-back-fist"></i>
+            <i class="fa-solid fa-hand"></i>
+            <i class="fa-solid fa-hand-scissors"></i>
+            <i class="fa-solid fa-hand-lizard"></i>
+            <i class="fa-solid fa-hand-spock"></i>
+            <div class="score-area2">
+                <p class="result-gamer2">Computer results: <span id="results-2">0</span></p>
+
 
         </div>
     </section>
+</section>
+
+
+<section class="results-total">
+        <div>
+            <p>Gamer 1 choose:<span class="gamer1-choosen">0</span></p>
+            <p>Computer choose:<span class="computer-choosen">0</span></p>
+            <p>Winner is <span class="winner-is">0</span></p>
+        </div>
+    </section>
+    <footer>
+        <h3>Rules</h3>
+        <p>The rules: Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors. 
+            You can also look at the picture at the top to get a better understanding.
+        </p>
+    </footer>
 
         
     
