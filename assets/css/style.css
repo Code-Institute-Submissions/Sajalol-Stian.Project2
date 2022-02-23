@@ -39,29 +39,45 @@ footer {
     float: left;
     text-align: center;
     font-size: 35px;
-    margin-top: 8%;
+    margin-top: 5%;
 
 }
 
 .control {
+    text-align: center;
     font-size: 40px;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    
+}
+.control:hover {
+    background-color: lightcoral;
 }
 
+
 .Gamer2-area {
-    margin-right: 15%;
+    margin-right: 12%;
     float: right;
     text-align: center;
     font-size: 35px;
-    margin-top: 8%;
+    margin-top: 5%;
+
+}
+
+.computer-gamer > i {
+    text-align: center;
+    display: block;
+    padding-top: 3%;
 
 }
 
 .result-gamer2 {
-    padding-top: 30%;
+    padding-top: 13%;
 }
 
 .results-total {
     text-align: center;
-    padding-top: 20%;
+    padding-top: 18%;
     font-size: 30px;
 }
