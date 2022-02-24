@@ -21,6 +21,8 @@ controls.forEach((control) => {
 
         const cControls =["Rock", "Paper", "Scissors", "Lizard", "Spock"];
         const cInput = cControls[Math.floor(Math.random()* 5)];
+
+        compareInputs(pInput, cInput);
     });
 });
 
