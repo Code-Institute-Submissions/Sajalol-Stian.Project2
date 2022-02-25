@@ -43,7 +43,7 @@ footer {
 
 }
 
-.controls {
+.gamer-buttons > button {
     text-align: center;
     font-size: 40px;
     display: block;
@@ -51,7 +51,7 @@ footer {
     cursor: pointer;
     
 }
-.control:hover {
+.gamer-buttons > button:hover {
     background-color: lightcoral;
 }
 

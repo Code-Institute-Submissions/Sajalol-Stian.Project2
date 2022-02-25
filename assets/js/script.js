@@ -2,13 +2,12 @@
  * Declare constants for DOM elements
  * and choices
  */
-
-const buttons = document.getElementById("controls");
+console.log('connected!');
 const playerScore = document.getElementById("results-1");
 const computerScore = document.getElementById("results-2");
 const messages = document.getElementById("messages");
-const choices = ["Rock", "Paper", "Scissors", "Lizard", "Spock"]
-const controls = document.querySelectorAll(".control");
+const choices = ["rock", "paper", "scissors", "lizard", "spock"]
+const controls = document.querySelectorAll("btn btn-lg btn-success");
 
 /**
  * Add event listener to buttons
@@ -16,10 +15,10 @@ const controls = document.querySelectorAll(".control");
  */
 
 controls.forEach((control) => {
-    control.addEventListener("click", function(){
+    control.addEventListener("click", function () {
         const pInput = this.textContent;
 
-        const cControls =["Rock", "Paper", "Scissors", "Lizard", "Spock"];
+        const cControls =["rock", "paper", "scissors", "lizard", "spock"];
         const cInput = cControls[Math.floor(Math.random()* 5)];
 
         compareInputs(pInput, cInput);
@@ -37,23 +36,23 @@ function compareInputs(pInput, cInput) {
         alert(`${currentMatch} is a Tie`);
         return;
     }
-}
+
 
 // Rock
-if (pInput === "Rock") {
-    if (cInput === "Scissors") {
+if (pInput === "rock") {
+    if (cInput === "scissors") {
         alert(`${currentMatch} = You Win`);
-    } else if (cInput === "Lizard") {
+    } else if (cInput === "lizard") {
         alert(`${currentMatch} = You Win`)
     } else {
         alert(`${currentMatch} = Computer Wins`)
     }
 }
 // Paper
-else if (pInput === "Paper") {
-    if (cInput === "Rock") {
+else if (pInput === "paper") {
+    if (cInput === "rock") {
         alert(`${currentMatch} = You Win`);
-    } else if (cInput === "Spock")  {
+    } else if (cInput === "spock")  {
         alert(`${currentMatch} = You Win`);
     } else {
         alert(`${currentMatch} = Computer Wins`);
@@ -61,10 +60,10 @@ else if (pInput === "Paper") {
 }
 
 // Scissors
-else if (pInput === "Scissors") {
-    if (cInput === "Paper") {
+else if (pInput === "scissors") {
+    if (cInput === "paper") {
         alert(`${currentMatch} = You Win`);
-    } else if (cInput === "Lizard") {
+    } else if (cInput === "lizard") {
         alert(`${currentMatch} = You Win`);
     } else {
         alert(`${currentMatch} = Computer Wins`);
@@ -72,10 +71,10 @@ else if (pInput === "Scissors") {
 }
 
 // Lizard
-else if (pInput === "Lizard") {
-    if (cInput === "Spock") {
+else if (pInput === "lizard") {
+    if (cInput === "spock") {
         alert(`${currentMatch} = You Win`);
-    } else if (cInput === "Paper") {
+    } else if (cInput === "paper") {
         alert(`${currentMatch} = You Win`);
     } else {
         alert(`${currentMatch} = Computer Wins`);
@@ -83,16 +82,16 @@ else if (pInput === "Lizard") {
 }
 
 // Spock
-else if (pInput === "Spock") {
-    if (cInput === "Scissors") {
+else if (pInput === "spock") {
+    if (cInput === "scissors") {
         alert(`${currentMatch} = You Win`);
-    } else if (cInput === "Rock") {
+    } else if (cInput === "rock") {
         alert(`${currentMatch} = You Win`);
     } else {
         alert(`${currentMatch} = Computer wins`);
     }
 }
-
+}
 
 
 
