@@ -24,16 +24,16 @@
             <h3>Gamer 1</h3>
             <h3>Gamer make a choise</h3>
             <div class="gamer-buttons">
-                <button aria-label="Rock" data-choice="0" class="control">rock</button>
-                <button aria-label="Paper" data-choice="1" class="control">Paper</button>
-                <button aria-label="Scissors" data-choice="2" class="control">Scissors</button>
-                <button aria-label="Lizard" data-choice="3" class="control">Lizard</button>
-                <button aria-label="Spock" data-choice="4" class="control">Spock</button>
+            <button class="control" title="Rock" onclick="clicked('Rock')"><i class="far fa-hand-rock"></i></button>
+            <button class="control" title="Paper" onclick="clicked('Paper')"><i class="far fa-hand-paper"></i></button>
+            <button class="control" title="Scissors" onclick="clicked('Scissors')"><i class="far fa-hand-scissors"></i></button>
+            <button class="control" title="Lizard" onclick="clicked('Lizard')"><i class="far fa-hand-lizard"></i></button>
+            <button class="control" title="Spock" onclick="clicked('Spock')"><i class="far fa-hand-spock"></i></button>
             </div>
         </div>
         <div id="messages"></div>
         <div class="score-area1">
-            <p class="result-gamer1">Results: <span id="results-1">0</span></p>
+            <p class="result-gamer1">Results: <span id="gamer_result">0</span></p>
             <button id="player-button" alt="Rock Paper Scissors Lizard Spock"></button>
         </div>
     </section>
@@ -54,7 +54,8 @@
             </button>
         </div>
             <div class="score-area2">
-                <p class="result-gamer2">Computer results: <span id="results-2">0</span></p>
+                <p class="result-gamer2">Computer results: <span id="comp_result">0</span></p>
+                <button id="computer-Button" alt="Rock Paper Scissors Lizard Spock"></button>
 
 
         </div>
@@ -68,7 +69,7 @@
             <p>Computer chose:<span id="computer-choosen"></span></p>
             <p>Winner is <span id="winner-is"></span></p>
         </div>
-        <div class="result"></div>
+        <p id="result"></p>
     </section>
     <footer>
         <h3>Rules</h3>
@@ -81,6 +82,6 @@
     
 
 
-    <script src="assets/js/scripttest.js"></script>
+    <script src="assets/js/scripttest2.js"></script>
 </body>
 </html>
