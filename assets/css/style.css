@@ -18,7 +18,7 @@ header {
 }
 
 footer {
-    position: absolute;
+    position: relative;
     width: 100%;
     left: 0;
     right: 0;
@@ -31,7 +31,6 @@ footer {
     font-size: 20px;
     font-weight: bold;
     height: 15%;
-    min-height: 15%;
 }
 
 /* gamer area */
@@ -106,8 +105,8 @@ footer {
 }
 
 
-/** Screen site adjustments for tablets**/
-@media (max-width: 1200px) {
+/** Screen site adjustments for laptops**/
+@media (max-width: 1300px) {
     .Gamer1-area {
         margin-left: 3%;
         font-size: 20px; 
@@ -123,11 +122,83 @@ footer {
 
     .results-total > div {
         font-size: 30px;
-        padding-top: 65%;
+        padding-top: 30%;
     }
 
     footer {
         height: 20%;
     }
+}
+
+/** Screen site adjustments for tablets **/
+@media (max-width: 1050px) {
+    .results-total > div {
+        padding-top: 60%;
+
+    }
+}
+
+
+/** Screen site adjustments for phones **/
+
+@media (max-width: 700px) {
+    .Gamer1-area {
+        margin-left: 0%;
+        font-size: 10px; 
+        padding-top: 15%;
+
+    }
+
+    .Gamer2-area {
+        margin-right: 0%;
+        font-size: 10px;
+        padding-top: 15%;
+    }
+
+    .results-total > div {
+        font-size: 20px;
+        padding-top: 100%;
+    }
+
+    footer {
+        height: 22%;
+        font-size: 17px;
+        position: absolute;
+    }
+
+    .logo {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+/** Screen adjustment for smaller phones **/
+@media (max-width: 350px) {
+    .Gamer1-area {
+        font-size: 10px; 
+        padding-top: 30%;
+
+    }
+
+    .Gamer2-area {
+        margin-right: 0%;
+        font-size: 10px;
+        padding-top: 30%;
+    }
+
+    .results-total > div {
+        font-size: 20px;
+        padding-top: 140%;
+    }
+
+    footer {
+        font-size: 17px;
+        position:relative;
+    }
+
+    .logo {
+        display: none;
+    }
+
 }
 
