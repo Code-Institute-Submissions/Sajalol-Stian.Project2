@@ -1,7 +1,7 @@
 const result = document.getElementById("winner-is");
 let [gamer_result, comp_result] = [0,0];
 
-let gameRules = {
+let rules = {
     Rock: {
         Rock: 'draw',
         Scissors: 'lose',
@@ -45,22 +45,22 @@ function clicked(input) {
     let comp_choice = choices[randomNumber];
 
     console.log(randomNumber);
-    document.getElementById("gamer1-choosen").innerHTML = `<p>${input}</p>`;
-    document.getElementById("computer-choosen").innerHTML = `<p>${comp_choice}</p>`;
+    document.getElementById("gamer1-choosen").innerHTML = `<i>${input}</i>`;
+    document.getElementById("computer-choosen").innerHTML = `<i>${comp_choice}</i>`;
 
     console.log('input', input, 'comp-choice', comp_choice);
 
-    switch(gameRules[comp_choice][input]) {
+    switch(rules[comp_choice][input]) {
         case 'win':
-            result.innerText = `You Win`;
+            result.innerText = `Gamer 1`;
             gamer_result++;
             break;
         case 'lose':
-            result.innerText = `You lose`;
+            result.innerText = `Computer`;
             comp_result++;
             break;
         case 'draw':
-            result.innerText = `You draw`;
+            result.innerText = `Draw`;
             break;
         }
         document.getElementById('gamer_result').innerHTML = gamer_result;
@@ -68,8 +68,10 @@ function clicked(input) {
 
         if(gamer_result === 5) {
             alert('You won the match');
+            location.reload();
         } else if(comp_result === 5) {
             alert("Computer won the match");
+            location.reload();
         }
 
 }
