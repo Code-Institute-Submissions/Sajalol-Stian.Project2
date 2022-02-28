@@ -1,98 +1,81 @@
-/**
- * Declare constants for DOM elements
- * and choices
- */
-console.log('connected!');
-const playerScore = document.getElementById("results-1");
-const computerScore = document.getElementById("results-2");
-const messages = document.getElementById("messages");
-const choices = ["rock", "paper", "scissors", "lizard", "spock"]
-const controls = document.querySelectorAll("btn btn-lg btn-success");
+const result = document.getElementById("winner-is");
+let [gamer_result, comp_result] = [0,0];
 
-/**
- * Add event listener to buttons
- * 
- */
-
-controls.forEach((control) => {
-    control.addEventListener("click", function () {
-        const pInput = this.textContent;
-
-        const cControls =["rock", "paper", "scissors", "lizard", "spock"];
-        const cInput = cControls[Math.floor(Math.random()* 5)];
-
-        compareInputs(pInput, cInput);
-    });
-});
-
-/**
- * compare inputs
- */
-function compareInputs(pInput, cInput) {
-    const currentMatch = `${pInput} vs ${cInput}`;
-
-    // Tie check
-    if (pInput === cInput) {
-        alert(`${currentMatch} is a Tie`);
-        return;
-    }
-
-
-// Rock
-if (pInput === "rock") {
-    if (cInput === "scissors") {
-        alert(`${currentMatch} = You Win`);
-    } else if (cInput === "lizard") {
-        alert(`${currentMatch} = You Win`)
-    } else {
-        alert(`${currentMatch} = Computer Wins`)
-    }
-}
-// Paper
-else if (pInput === "paper") {
-    if (cInput === "rock") {
-        alert(`${currentMatch} = You Win`);
-    } else if (cInput === "spock")  {
-        alert(`${currentMatch} = You Win`);
-    } else {
-        alert(`${currentMatch} = Computer Wins`);
+let rules = {
+    Rock: {
+        Rock: 'draw',
+        Scissors: 'lose',
+        Paper: 'win',
+        Spock: 'win',
+        Lizard: 'lose'
+    },
+    Paper: {
+        Paper: 'draw',
+        Rock: 'lose',
+        Scissors: 'win',
+        Lizard: 'win',
+        Spock: 'lose'
+    },
+    Scissors: {
+        Scissors: 'draw',
+        Paper: 'lose',
+        Rock: 'win',
+        Lizard: 'lose',
+        Spock: 'win'
+    },
+    Lizard: {
+        Scissors: 'win',
+        Paper: 'lose',
+        Rock: 'win',
+        Lizard: 'draw',
+        Spock: 'lose'
+    },
+    Spock: {
+        Scissors: 'lose',
+        Paper: 'win',
+        Rock: 'lose',
+        Lizard: 'win',
+        Spock: 'draw'
     }
 }
 
-// Scissors
-else if (pInput === "scissors") {
-    if (cInput === "paper") {
-        alert(`${currentMatch} = You Win`);
-    } else if (cInput === "lizard") {
-        alert(`${currentMatch} = You Win`);
-    } else {
-        alert(`${currentMatch} = Computer Wins`);
-    }
+function clicked(input) {
+    let choices = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
+    let randomNumber = Math.floor(Math.random() * 5);
+    let comp_choice = choices[randomNumber];
+
+    console.log(randomNumber);
+    document.getElementById("gamer1-choosen").innerHTML = `<i>${input}</i>`;
+    document.getElementById("computer-choosen").innerHTML = `<i>${comp_choice}</i>`;
+
+    console.log('input', input, 'comp-choice', comp_choice);
+
+    switch(rules[comp_choice][input]) {
+        case 'win':
+            result.innerText = `Gamer 1`;
+            gamer_result++;
+            break;
+        case 'lose':
+            result.innerText = `Computer`;
+            comp_result++;
+            break;
+        case 'draw':
+            result.innerText = `Draw`;
+            break;
+        }
+        document.getElementById('gamer_result').innerHTML = gamer_result;
+        document.getElementById('comp_result').innerHTML = comp_result;
+
+        if(gamer_result === 5) {
+            swal({title: "Good Job!", text: "You won the match!"}).then(function(){ 
+   location.reload();
+   }
+);  
+        } else if(comp_result === 5) {
+            swal({title: "Computer Won", text: "Better luck next time!"}).then(function(){ 
+   location.reload();
+   }
+);
+        }
+
 }
-
-// Lizard
-else if (pInput === "lizard") {
-    if (cInput === "spock") {
-        alert(`${currentMatch} = You Win`);
-    } else if (cInput === "paper") {
-        alert(`${currentMatch} = You Win`);
-    } else {
-        alert(`${currentMatch} = Computer Wins`);
-    }
-}
-
-// Spock
-else if (pInput === "spock") {
-    if (cInput === "scissors") {
-        alert(`${currentMatch} = You Win`);
-    } else if (cInput === "rock") {
-        alert(`${currentMatch} = You Win`);
-    } else {
-        alert(`${currentMatch} = Computer wins`);
-    }
-}
-}
-
-
-
-

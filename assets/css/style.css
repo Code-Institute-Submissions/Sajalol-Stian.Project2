@@ -4,6 +4,7 @@
 html {
     min-height: 100%;
     position: relative;
+    background-color: #41b3a3
 }
 
 body {
@@ -50,6 +51,7 @@ footer {
     display: block;
     width: 100%;
     cursor: pointer;
+    background-color: #c38d9e
     
 }
 .gamer-buttons > button:hover {
@@ -72,6 +74,7 @@ footer {
     width: 100%;
     font-size: 40px;
     cursor: not-allowed;
+    background-color: #c38d9e;
 
 }
 
@@ -87,4 +90,17 @@ footer {
     padding-top: 18%;
     font-size: 35px;
     
+}
+
+.results-total {
+    font-weight: bold;
+    text-align: center;
+}
+
+.score-area2 {
+    font-weight: bold;
+}
+
+.score-area1 {
+    font-weight: bold;
 }
