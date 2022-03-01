@@ -45,3 +45,11 @@ This game is targeted towards adults and children, you can learn the game from t
 - The footer explains the rules in text.
 
 ![Footer](./assets/images/Footer.JPG)
+
+
+# Testing
+
+* Tested the game in Firefox, Chrome and Edge.
+* Confirmed results are always correct
+* Confirmed all text are readable and easy to understand.
+* Confirmed that the colors and fonts chosen are easy to read and accessible by running it through lighthouse in devtools.
