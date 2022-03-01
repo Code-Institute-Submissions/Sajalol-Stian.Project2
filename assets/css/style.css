@@ -132,9 +132,16 @@ footer {
         position: absolute;
     }
 }
+@media (max-width: 1200px) {
+    .results-total > div {
+        padding-top: 35%;
+    }
+
+}
+
 
 /** Screen site adjustments for tablets **/
-@media (max-width: 950px) {
+@media (max-width: 850px) {
     .results-total > div {
         padding-top: 60%;
 
@@ -166,7 +173,7 @@ footer {
 
     .results-total > div {
         font-size: 20px;
-        padding-top: 100%;
+        padding-top: 70%;
     }
 
     footer {
