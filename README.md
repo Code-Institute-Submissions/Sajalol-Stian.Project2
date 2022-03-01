@@ -7,3 +7,11 @@ The computer will choose randomly everytime.
 This game is targeted towards adults and children, you can learn the game from the page and apply it to in real life game aswell. Practicing this game on this page will give you an advantage when you will play versus your friends. 
 
 ![AmIresponsive](./assets/images/am_i_responsive.JPG)
+
+## Features
+
+* Header
+- Featured at the top of the page, the name of the game: Rock, Paper, Scissor, Lizard, Spock game. The font fits the theme and the contrast of the background.
+- The header clearly say what this page is about
+
+![Header](./assets/images/header-rock.JPG)
