@@ -18,7 +18,7 @@ header {
 }
 
 footer {
-    position: relative;
+    position: absolute;
     width: 100%;
     left: 0;
     right: 0;
@@ -131,7 +131,7 @@ footer {
 }
 
 /** Screen site adjustments for tablets **/
-@media (max-width: 1050px) {
+@media (max-width: 950px) {
     .results-total > div {
         padding-top: 60%;
 
