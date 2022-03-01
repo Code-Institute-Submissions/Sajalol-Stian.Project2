@@ -37,7 +37,7 @@ let rules = {
         Lizard: 'win',
         Spock: 'draw'
     }
-}
+};
 
 function clicked(input) {
     let choices = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
