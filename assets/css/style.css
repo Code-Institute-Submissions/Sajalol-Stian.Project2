@@ -30,6 +30,11 @@ footer {
     height: 17%;
 }
 
+.logo {
+    width: 300px;
+    height: 300px;
+}
+
 /* gamer area */
 
 .Gamer1-area {
