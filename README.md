@@ -47,9 +47,58 @@ This game is targeted towards adults and children, you can learn the game from t
 ![Footer](./assets/images/Footer.JPG)
 
 
+
 # Testing
 
 * Tested the game in Firefox, Chrome and Edge.
 * Confirmed results are always correct
 * Confirmed all text are readable and easy to understand.
 * Confirmed that the colors and fonts chosen are easy to read and accessible by running it through lighthouse in devtools.
+
+![lighthouse](./assets/images/lighthouse.JPG)
+
+* Confirmed that this project is responsive, looks good and functions on all standard screen sizes using the devtool device toolbar and http://ami.responsivedesign.is/#
+
+
+## Bugs
+
+### Solved bugs
+
+* Issues with CSS and site beeing responsive.
+* Changed the script a couple of times due to not getting it to work.
+
+
+### Unfixed bugs
+
+* No known unfixed bugs.
+
+## JavaScript testing
+
+* Tested my JavaScript through [JS](https://jshint.com/). Found no errors, just some warnings that doesn't matter. 
+
+## HTML testing
+
+* HTML validator page down for maintenance
+
+## CSS Testing
+
+* CSS validator page down for maintenance
+
+
+# Deployment
+- The site was deployed to GitHub pages. The steps to delpy are as follows:
+- Choose the repository you'd like to deploy on the frontpage.
+- Choose "Settings" on the top bar.
+- Find "Pages" on the side bar.
+- Under "Source" choose "main" branch and save. After about 3-5mins your site should be deployed.
+
+* Live link can be found here - [Project-2 - Stian](https://sajalol.github.io/Stian.Project2/)
+
+## Credits
+
+### Content
+- Various youtube creators and various google articles to assist with Javascripting
+- Some ideas from Ultimate rock paper scissors project
+
+### Media
+- The logo is taken from google pictures
