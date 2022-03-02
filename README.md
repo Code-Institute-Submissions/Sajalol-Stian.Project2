@@ -78,11 +78,11 @@ This game is targeted towards adults and children, you can learn the game from t
 
 ## HTML testing
 
-* HTML validator page down for maintenance
+* No errors were returned when passing through the official W3C validator
 
 ## CSS Testing
 
-* CSS validator page down for maintenance
+* No errors were returned when passing through the official Jigsaw validator
 
 
 # Deployment
@@ -101,4 +101,4 @@ This game is targeted towards adults and children, you can learn the game from t
 - Some ideas from Ultimate rock paper scissors project
 
 ### Media
-- The logo is taken from google pictures
+- The logo is taken from google pictures [BigBangTheory Fandom](https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock)
