@@ -112,14 +112,14 @@ footer {
     .Gamer1-area {
         margin-left: 3%;
         font-size: 20px; 
-        padding-top: 5%;
+        padding-top: 3%;
 
     }
 
     .Gamer2-area {
         margin-right: 3%;
         font-size: 20px;
-        padding-top: 5%;
+        padding-top: 3%;
     }
 
     .results-total > div {
@@ -211,7 +211,7 @@ footer {
 
     footer {
         font-size: 17px;
-        height:300px;
+        height:250px;
         position: relative;
     }
 
